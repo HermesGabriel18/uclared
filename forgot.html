@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Aplicacion web para una gestion de pryecto, Sistemas III-UCLA">
+		<meta name="keywords" content="Gestion de proyecto, mision, vision,quienes somos, sistema web">
+	<title>UCLARED</title>
+
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="assets/images/ico/logos-solid.png">
+
+</head>
+<body id="home" class="homepage" background="assets/images/like.jpg">
+
+	<!-- <div class="container"> -->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<a class="navbar-brand">Recuperacion de datos del sistema:</a>
+				<div class="collapse navbar-collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li class="scroll active"><a href="index.html"><i class="fa fa-arrow-circle-left"></i> Volver al inicio </a></li>
+					</ul>
+				</div>			
+			</nav>
+		</header>
+	<!-- </div> -->
+
+
+	<section class="forgot" style="margin: 100px;">
+		<div class="container">
+			<!-- <div class="row"> -->
+		<section class="col-xs-12 col-md-12">
+		<form action="#" method="post" id="resetpass" name="resetpass">
+
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="cedula">Introduzca su cédula:</label>
+						<input type="text" name="cedula" class="form-control" placeholder="00000000" required>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="especialidad"">Introduzca su especialidad:</label>
+						<input type="text" name="especialidad" class="form-control" placeholder="Especialidad" required>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="newpassword">Introduzca su nueva contraseña:</label>
+						<input type="password" name="newpassword" class="form-control" placeholder="Nueva contraseña" required>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-md-12">
+					<input type="hidden" name="funcion" value="reset">
+					<button type="submit" class="btn btn-primary" id="btn-datos"><i class="fa fa-mail-reply"></i> Enviar datos</button>
+					<!-- <input type="reset" class="btn btn-secundary" value="Cancelar"> -->
+				</div>
+			</div>				
+
+		</form>
+		
+		</section>
+			<!-- </div> -->
+		</div>
+		
+	</section>
+
+	<script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+     <script src="app/plugins/sweetalert/sweetalert.js"></script>
+ 
+    <script src="app/sistema/controladores/mensaje.js"></script>
+</body>
+</html>

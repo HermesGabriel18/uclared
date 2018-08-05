@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200);
+/**
+ * Default Look and Feel
+ */
+.alertify,
+.alertify-log {
+	font-family: 'Yanone Kaffeesatz';
+        line-height: 1em;
+}
+.alertify {
+	background: #FFF;
+	border: 10px solid #333; /* browsers that don't support rgba */
+	border: 10px solid rgba(0,0,0,.7);
+	border-radius: 5px;
+	box-shadow: 0 3px 3px rgba(0,0,0,.3);
+	-webkit-background-clip: padding;     /* Safari 4? Chrome 6? */
+        -moz-background-clip: padding;     /* Firefox 3.6 */
+        background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+.alertify-text {
+	border: 1px solid #CCC;
+	padding: 10px;
+	border-radius: 4px;
+}
+.alertify-button {
+	border-radius: 2px;
+	color: #0073ea;
+	font-weight: bold;
+	padding: 6px 10px;
+	text-decoration: none;
+}
+.alertify-button:hover,
+.alertify-button:focus{
+        color: #0073ea;
+	outline: none;
+        background-color:#E0E0E0;
+        border: 1px solid #ccc;
+	
+}
+/*
+.alertify-button:active {
+	position: relative;
+	top: 1px;
+}*/
+	.alertify-button-cancel {
+                color: #fff;
+		background-color: #0073ea;
+		border: 1px solid #0073ea;
+	}
+	.alertify-button-ok {
+		background-color: #00a65a;
+		border: 1px solid #008d4c;
+	}
+.alertify-log {
+	background: #1F1F1F;
+	background: rgba(0,0,0,.9);
+	padding: 15px;
+	border-radius: 4px;
+	color: #FFF;
+	text-shadow: -1px -1pxtext-shadow 0 rgba(0,0,0,.5);
+}
+	.alertify-log-error {
+		background: #d73925;
+		/*background: rgba(254,26,0,.9);*/
+	}
+	.alertify-log-success {
+		background: #00a65a;
+		/*background: rgba(92,184,17,.9);*/
+	}
